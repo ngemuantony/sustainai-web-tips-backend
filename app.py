@@ -27,7 +27,7 @@ app = Flask(__name__)
 # Configure CORS for frontend integration
 CORS(app, resources={
     r"/api/*": {
-        "origins": ["http://localhost:3000", "http://127.0.0.1:3000"],
+        "origins": ["http://localhost:3000", "https://sustainai-web-tips.vercel.app/"],
         "methods": ["POST", "OPTIONS"],
         "allow_headers": ["Content-Type"]
     }
