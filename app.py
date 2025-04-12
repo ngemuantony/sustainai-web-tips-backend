@@ -27,7 +27,7 @@ app = Flask(__name__)
 # Configure CORS for frontend integration
 CORS(app, resources={
     r"/api/*": {
-        "origins": ["https://sustainai-web-tips.vercel.app", "https://sustainai-web-tips.vercel.app"],
+        "origins": ["https://sustainai-web-tips.vercel.app", "http://localhost:3000"],
         "methods": ["POST", "OPTIONS"],
         "allow_headers": ["Content-Type"]
     }
@@ -67,6 +67,7 @@ def generate_ai_tips(location: str, habits: str) -> list:
         3. Transportation & Mobility
         4. Community & Social Impact
         5. Environmental Protection
+        6. Health
 
         For each tip:
         - Make it specific to {location}
